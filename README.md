@@ -39,7 +39,7 @@ Standard logs don't show enough info, so I enabled **Advanced Audit Policies**:
 * **Removed Apps:** I uninstalled `XPS-Viewer` since we don't need it and it can be a security risk.
 
 ## 📂 Repository Contents
-* `hardening_audit.ps1` - The PowerShell script I used to configure the security settings and logs.
+* `hardening_audit.ps1` - Everything was done manually but I tried creating a PowerShell script to configure the security settings and logs automatically, feel free to try in a test VM.
 
 ---
 *Infrastructure Design by [Jesper Nilsson](https://github.com/JeNilSE)*
