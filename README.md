@@ -1,6 +1,6 @@
 # Windows Server 2022 & Active Directory Hardening
 
-## 📌 Project Overview
+## 🌄 Project Overview
 This project documents how I set up a secure Windows Server environment in **Microsoft Azure**. My goal was to build an Active Directory that is secure from the start, focusing on organizing permissions correctly and removing unnecessary risks.
 
 **Key Tech:**
@@ -9,12 +9,12 @@ This project documents how I set up a secure Windows Server environment in **Mic
 * **Tools:** Group Policy Objects (GPO) & PowerShell
 * **Cloud:** Azure Resource Groups & VNet
 
-## 🛡️ Security Implementations
+## 🔒 Security Implementations
 
 ### 1. Organizing Access - Identity & Access Management (IAM)
-Instead of having a flat structure where everyone is an admin, I organized the accounts properly:
+Instead of having a structure where everyone is an admin, I organized the accounts like this:
 * **OU Structure:** I separated `Admin_Accounts`, `Service_Accounts`, and `Users` into their own folders.
-* **Roles:** I created specific groups (like `GG_Helpdesk`) to avoid using the powerful "Domain Admins" account for daily tasks.
+* **Roles:** I created specific groups (like `GG_Helpdesk`) to avoid using "Domain Admins" accounts for daily tasks.
 * **Service Accounts:** I made a restricted account (`svc_backup`) that cannot **log in directly**. It is only allowed to run services in the background.
 * **Passwords:** I created a special rule (`PSO_Admins`) that forces administrators to have longer passwords (15 characters) than normal users.
 
@@ -38,8 +38,8 @@ Standard logs don't show enough info, so I enabled **Advanced Audit Policies**:
 * **No SMBv1:** I disabled the old SMBv1 protocol because it has known security holes (like WannaCry).
 * **Removed Apps:** I uninstalled `XPS-Viewer` since we don't need it and it can be a security risk.
 
-## 📂 Repository Contents
-* `hardening_audit.ps1` - Everything was done manually but I tried creating a PowerShell script to configure the security settings and logs automatically, feel free to try in a test VM.
+## 📎 Repository Contents
+* `hardening_audit.ps1` - Everything was done manually but I tried creating a PowerShell script to configure the security settings and logs automatically, feel free to try in a test VM (DO NOT USE IN PRODUCTION ENV).
 
 ---
-*Infrastructure Design by [Jesper Nilsson](https://github.com/JeNilSE)*
+*Infrastructure Design by [Me](https://github.com/JeNilSE)*
