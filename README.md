@@ -38,7 +38,7 @@ Standard logs don't show enough info, so I enabled **Advanced Audit Policies**:
 * **No SMBv1:** I disabled the old SMBv1 protocol because it has known security holes (like WannaCry).
 * **Removed Apps:** I uninstalled `XPS-Viewer` since we don't need it and it can be a security risk.
 
-## Some important notes about the project
+## 📋 Some important notes about the project
 This was not everything that was made on the project but it is my part of a group project.
 
 ## 📎 Repository Contents
