@@ -45,4 +45,4 @@ This was not everything that was made on the project but it is my part of a grou
 * `hardening_audit.ps1` - Everything was done manually but I tried creating a PowerShell script to configure the security settings and logs automatically, feel free to try in a test VM (DO NOT USE IN PRODUCTION ENV).
 
 ---
-*Infrastructure Design by [Me](https://github.com/JeNilSE)*
+*Created by [Me](https://github.com/JeNilSE)*
